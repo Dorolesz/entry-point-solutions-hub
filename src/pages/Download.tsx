@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Download, Monitor, Smartphone, ChevronDown, Check, Loader2 } from "lucide-react";
+import { Monitor, Smartphone, ChevronDown, Check, Loader2 } from "lucide-react";
+import { Download as DownloadIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -32,7 +32,7 @@ const DesktopDownload = () => {
         <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 12h7l-3 10 7-12h-7l3-10-7 12z"></path>
               </svg>
             </div>
@@ -50,7 +50,7 @@ const DesktopDownload = () => {
                 </>
               ) : (
                 <>
-                  <Download className="mr-2 h-4 w-4" />
+                  <DownloadIcon className="mr-2 h-4 w-4" />
                   Letöltés (.exe)
                 </>
               )}
@@ -62,7 +62,7 @@ const DesktopDownload = () => {
         <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
                 <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
@@ -86,7 +86,7 @@ const DesktopDownload = () => {
                 </>
               ) : (
                 <>
-                  <Download className="mr-2 h-4 w-4" />
+                  <DownloadIcon className="mr-2 h-4 w-4" />
                   Letöltés (.dmg)
                 </>
               )}
@@ -128,7 +128,7 @@ const MobileDownload = () => {
         <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 16V8a7 7 0 0 1 14 0v8"></path>
                 <line x1="12" y1="4" x2="12" y2="2"></line>
                 <line x1="8" y1="16" x2="8" y2="20"></line>
@@ -152,7 +152,7 @@ const MobileDownload = () => {
         <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 17.2c-.9 0-1.7-.7-1.7-1.7v-7c0-.9.8-1.7 1.7-1.7s1.7.7 1.7 1.7v7c0 .9-.7 1.7-1.7 1.7z"></path>
                 <path d="M15 17.2c-.9 0-1.7-.7-1.7-1.7v-7c0-.9.8-1.7 1.7-1.7s1.7.7 1.7 1.7v7c0 .9-.8 1.7-1.7 1.7z"></path>
                 <path d="M12 8.5c2 0 4-1.8 4-4H8c0 2.2 2 4 4 4z"></path>
