@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
@@ -10,9 +9,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AB</span>
+                <span className="text-white font-bold text-xl">CP</span>
               </div>
-              <span className="ml-2 text-xl font-heading font-bold text-white">AccessBizto</span>
+              <span className="ml-2 text-xl font-heading font-bold text-white">CheckPoint</span>
             </div>
             <p className="text-gray-400 mb-4">
               Professzionális beléptető rendszerek és hozzáférés-kezelési megoldások minden méretű vállalkozás számára.
@@ -34,20 +33,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Navigáció</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white transition">Főoldal</Link></li>
-              <li><Link to="/products/hardware" className="text-gray-400 hover:text-white transition">Termékek</Link></li>
-              <li><Link to="/download" className="text-gray-400 hover:text-white transition">Letöltés</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition">Rólunk</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition">Kapcsolat</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Jogi információk</h3>
-            <ul className="space-y-2">
-              <li><Link to="/terms" className="text-gray-400 hover:text-white transition">Felhasználási feltételek</Link></li>
-              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition">Adatvédelmi irányelvek</Link></li>
-              <li><Link to="/cookies" className="text-gray-400 hover:text-white transition">Cookie-szabályzat</Link></li>
-              <li><Link to="/gdpr" className="text-gray-400 hover:text-white transition">GDPR megfelelőség</Link></li>
+              <li><Link to="/download" className="text-gray-400 hover:text-white transition">Letöltés</Link></li>
             </ul>
           </div>
 
@@ -56,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
-                <span className="text-gray-400">info@accessbizto.hu</span>
+                <span className="text-gray-400">info@CheckPoint.hu</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
@@ -72,7 +60,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-10 pt-6">
           <p className="text-gray-500 text-sm text-center">
-            © {new Date().getFullYear()} AccessBizto Kft. Minden jog fenntartva.
+            © {new Date().getFullYear()} CheckPoint Kft. Minden jog fenntartva.
           </p>
         </div>
       </div>

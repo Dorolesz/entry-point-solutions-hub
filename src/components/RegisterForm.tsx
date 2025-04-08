@@ -90,7 +90,7 @@ const RegisterForm = () => {
     <div className="max-w-md w-full mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold font-heading">Regisztráció</h2>
-        <p className="text-gray-600 mt-2">Hozzon létre fiókot az AccessBizto rendszerhez</p>
+        <p className="text-gray-600 mt-2">Hozzon létre fiókot az CheckPoint rendszerhez</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-4">

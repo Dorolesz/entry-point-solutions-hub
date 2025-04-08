@@ -49,7 +49,7 @@ const FeaturesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold font-heading text-gray-900 mb-4">Miért válassza az AccessBizto rendszerét?</h2>
+          <h2 className="text-3xl font-bold font-heading text-gray-900 mb-4">Miért válassza az CheckPoint rendszerét?</h2>
           <p className="text-lg text-gray-600">
             Komplex beléptető rendszerünk minden igényt kielégít - a kisebb irodáktól kezdve a nagy létesítményekig, egyedi szükségletekre szabva.
           </p>

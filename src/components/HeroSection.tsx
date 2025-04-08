@@ -14,7 +14,7 @@ const HeroSection = () => {
               Intelligens beléptető rendszer a modern vállalkozásoknak
             </h1>
             <p className="mt-6 text-lg text-white/90 max-w-xl">
-              Az AccessBizto beléptető rendszerével biztosítsa épületei, irodái és létesítményei biztonságos hozzáférés-kezelését. Professzionális védelem, egyszerű használat.
+              Az CheckPoint beléptető rendszerével biztosítsa épületei, irodái és létesítményei biztonságos hozzáférés-kezelését. Professzionális védelem, egyszerű használat.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link to="/demo">

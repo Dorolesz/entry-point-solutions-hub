@@ -9,7 +9,7 @@ const testimonials = [
     position: "Operációs igazgató",
     company: "Tech Solutions Kft.",
     avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80",
-    comment: "Az AccessBizto rendszerére való áttérés után jelentősen javult irodáink biztonsága. A telepítés gyors volt, a rendszer könnyen kezelhető, a support csapat pedig rendkívül segítőkész.",
+    comment: "Az CheckPoint rendszerére való áttérés után jelentősen javult irodáink biztonsága. A telepítés gyors volt, a rendszer könnyen kezelhető, a support csapat pedig rendkívül segítőkész.",
     rating: 5
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     position: "Létesítmény vezető",
     company: "Building Management Kft.",
     avatar: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80",
-    comment: "Több telephelyet kezelünk egyidejűleg, és az AccessBizto rendszere tökéletes megoldást nyújt a központosított, mégis rugalmas hozzáférés-kezelésre.",
+    comment: "Több telephelyet kezelünk egyidejűleg, és az CheckPoint rendszere tökéletes megoldást nyújt a központosított, mégis rugalmas hozzáférés-kezelésre.",
     rating: 4
   }
 ];
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold font-heading text-gray-900 mb-4">Ügyfeleink mondták</h2>
             <p className="text-lg text-gray-600">
-              Több száz elégedett ügyfelünk osztotta meg tapasztalatait az AccessBizto beléptető rendszerével kapcsolatban.
+              Több száz elégedett ügyfelünk osztotta meg tapasztalatait az CheckPoint beléptető rendszerével kapcsolatban.
             </p>
           </div>
           

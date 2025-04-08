@@ -36,7 +36,7 @@ const LoginForm = () => {
       // Siker esetén:
       toast({
         title: "Sikeres bejelentkezés!",
-        description: "Üdvözöljük az AccessBizto rendszerben.",
+        description: "Üdvözöljük az CheckPoint rendszerben.",
       });
       setIsLoading(false);
       navigate("/dashboard");

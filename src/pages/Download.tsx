@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Monitor, Smartphone, ChevronDown, Check, Loader2 } from "lucide-react";
+import { Monitor, ChevronDown, Check, Loader2 } from "lucide-react";
 import { Download as DownloadIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
@@ -14,12 +14,12 @@ const DesktopDownload = () => {
 
   const handleDownload = (platform: string) => {
     setIsLoading(true);
-    
+
     // Szimuláljuk a letöltést
     setTimeout(() => {
       toast({
         title: "Letöltés elindult!",
-        description: `Az AccessBizto ${platform} verziójának letöltése hamarosan megkezdődik.`,
+        description: `Az CheckPoint ${platform} verziójának letöltése hamarosan megkezdődik.`,
       });
       setIsLoading(false);
     }, 1500);
@@ -120,83 +120,6 @@ const DesktopDownload = () => {
   );
 };
 
-const MobileDownload = () => {
-  return (
-    <div className="space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Android verzió */}
-        <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-          <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 16V8a7 7 0 0 1 14 0v8"></path>
-                <line x1="12" y1="4" x2="12" y2="2"></line>
-                <line x1="8" y1="16" x2="8" y2="20"></line>
-                <line x1="16" y1="16" x2="16" y2="20"></line>
-                <rect x="4" y="8" width="16" height="8" rx="1"></rect>
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Android</h3>
-            <p className="text-gray-500 mb-6">Android 7.0 vagy újabb verzió</p>
-            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-              <img 
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/hu_badge_web_generic.png"
-                alt="Google Play" 
-                className="h-16"
-              />
-            </a>
-          </div>
-        </div>
-
-        {/* iOS verzió */}
-        <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-          <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 17.2c-.9 0-1.7-.7-1.7-1.7v-7c0-.9.8-1.7 1.7-1.7s1.7.7 1.7 1.7v7c0 .9-.7 1.7-1.7 1.7z"></path>
-                <path d="M15 17.2c-.9 0-1.7-.7-1.7-1.7v-7c0-.9.8-1.7 1.7-1.7s1.7.7 1.7 1.7v7c0 .9-.8 1.7-1.7 1.7z"></path>
-                <path d="M12 8.5c2 0 4-1.8 4-4H8c0 2.2 2 4 4 4z"></path>
-                <path d="M17.2 15.2V8.5h2.1V17a4.8 4.8 0 0 1-4.8 4.8h-5a4.8 4.8 0 0 1-4.8-4.8V8.5h2.1v6.7c0 1.5 1.2 2.7 2.7 2.7h5c1.5 0 2.7-1.2 2.7-2.7z"></path>
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-2">iOS</h3>
-            <p className="text-gray-500 mb-6">iOS 13.0 vagy újabb verzió</p>
-            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
-              <img 
-                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
-                alt="App Store" 
-                className="h-12"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-blue-50 p-6 rounded-lg border border-blue-100">
-        <h3 className="text-lg font-semibold mb-2">Mobilalkalmazás funkciói:</h3>
-        <ul className="space-y-2">
-          <li className="flex items-center">
-            <Check className="h-4 w-4 text-green-500 mr-2" />
-            <span>Távoli ajtónyitás</span>
-          </li>
-          <li className="flex items-center">
-            <Check className="h-4 w-4 text-green-500 mr-2" />
-            <span>Jelenlét nyilvántartás</span>
-          </li>
-          <li className="flex items-center">
-            <Check className="h-4 w-4 text-green-500 mr-2" />
-            <span>Értesítések és riasztások</span>
-          </li>
-          <li className="flex items-center">
-            <Check className="h-4 w-4 text-green-500 mr-2" />
-            <span>Jogosultság delegálás</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const Download = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -206,29 +129,21 @@ const Download = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h1 className="text-4xl font-bold font-heading text-gray-900 mb-4">Alkalmazás letöltése</h1>
             <p className="text-lg text-gray-600">
-              Töltse le az AccessBizto alkalmazást és kezelje beléptető rendszerét bárhonnan, bármikor. Válasszon az elérhető platformok közül.
+              Töltse le az CheckPoint alkalmazást és kezelje beléptető rendszerét bárhonnan, bármikor. Válasszon az elérhető platformok közül.
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <Tabs defaultValue="desktop" className="space-y-6">
-              <TabsList className="grid w-full grid-cols-2">
+              <TabsList className="grid w-full grid-cols-1">
                 <TabsTrigger value="desktop" className="flex items-center justify-center">
                   <Monitor className="mr-2 h-4 w-4" />
                   Asztali alkalmazás
-                </TabsTrigger>
-                <TabsTrigger value="mobile" className="flex items-center justify-center">
-                  <Smartphone className="mr-2 h-4 w-4" />
-                  Mobilalkalmazás
                 </TabsTrigger>
               </TabsList>
               
               <TabsContent value="desktop">
                 <DesktopDownload />
-              </TabsContent>
-              
-              <TabsContent value="mobile">
-                <MobileDownload />
               </TabsContent>
             </Tabs>
             
@@ -252,7 +167,7 @@ const Download = () => {
                     <ChevronDown className="h-5 w-5 text-gray-500" />
                   </button>
                   <div className="mt-2 text-gray-600">
-                    <p>Az alkalmazás használatához érvényes AccessBizto fiókra és licenszre van szükség. Ha még nincs fiókja, <Link to="/register" className="text-primary hover:underline">regisztráljon itt</Link>.</p>
+                    <p>Az alkalmazás használatához érvényes CheckPoint fiókra és licenszre van szükség. Ha még nincs fiókja, <Link to="/register" className="text-primary hover:underline">regisztráljon itt</Link>.</p>
                   </div>
                 </div>
                 
